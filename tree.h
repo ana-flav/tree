@@ -7,7 +7,6 @@ typedef struct no{
     int key;
     struct no *left;
     struct no *right;
-    struct no *parent;
 } TNo;
 
 typedef struct{
@@ -17,7 +16,9 @@ typedef struct{
 BinTree *BinTree_create();
 bool Tree_insert(BinTree *, int);
 bool Tree_insert_r(TNo **,TNo*, int);
+TNo* insert_tree(char*, int *);
 void in_order(TNo*);
+int check_tree(TNo*);
 
 void pre_order(TNo*);
 #endif
