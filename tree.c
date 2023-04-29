@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "tree.h"
+#include <ctype.h>
+
 void in_order(TNo* root){
     if(root != NULL){
         in_order(root->left);
